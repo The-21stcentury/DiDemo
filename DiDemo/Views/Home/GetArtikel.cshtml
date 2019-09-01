@@ -1,0 +1,8 @@
+﻿@model ArtikelsViewModels
+
+<h1>@Model.Ueberschrift</h1>
+<p>
+    @*Html.Raw is parsing the string into html tag*@
+    @Html.Raw(@Model.Artikel)
+</p>
+

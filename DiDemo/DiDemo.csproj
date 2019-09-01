@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <StartupObject>DiDemo.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.3.0-preview8-19405-04" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Migrations\201908291238186_initials.resx">
+      <DependentUpon>201908291238186_initials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Migrations\201908301444139_updateTitel.resx">
+      <DependentUpon>201908301444139_updateTitel.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>

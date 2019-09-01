@@ -1,0 +1,21 @@
+﻿@model List<ArtikelsViewModels>
+@{
+    ViewData["Title"] = "Home Page";
+    
+}
+
+    <div class="text-center">
+        <h1 class="display-4">Dependency  Injection</h1>
+        <h2 class="display-3">Principles , Practices , And Patterns</h2>
+        <span>Directory Of Book</span>
+        @*<form action="GetArtikel" method="post">
+        </form>*@
+
+    <ul class="list-group">
+        @foreach (var a in Model)
+        {
+            <li><a asp-controller="Home" asp-action="GetArtikel" asp-route-id="@a.Id">@a.Ueberschrift</a></li>
+        }
+    </ul>
+    </div>
+
